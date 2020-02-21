@@ -1,5 +1,7 @@
  git add .github
  git add *
+git commit -m "update"
+git push --follow-tags
 
 # Hello world docker action
 
