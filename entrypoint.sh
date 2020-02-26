@@ -41,31 +41,13 @@ git config --global user.name ${GIT_USER_NAME}
 git clone ${GIT_URL} 
 ls ${GIT_PROJECT}/jmeterinfo/
 
-echo "before copy to dir"
 mkdir output
 chmod 777 output
-cat > output/do.txt
-cat > output/hi.txt
-echo "ls output after dumy copy file"
 
 echo "Before Java code run"
 java -classpath ${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}"
 echo "After Java code run"
 
-echo "current dir"
-pwd 
-ls
-
-ls output
-#cp /output/metrics.csv output
-echo "after copy to dir"
-ls output
-echo "before ls of output"
-ls output
-echo "after ls of output"
-
-echo "May be you see csv"
 cat ${CSV_OUTPUT_PATH}
-echo "Did you see csv?"
 
 echo "END Running Jmeter on date"
