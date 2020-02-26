@@ -5,7 +5,7 @@
 # This script expects the standdard JMeter command parameters.
 #
 
-printf 'The only winning move is not to play.\n' > dummy.txt
+cat > foo.txt
 
 echo "END Running Jmeter on date"
 
