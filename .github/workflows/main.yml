@@ -9,7 +9,7 @@ jobs:
       uses: kamipatel/jmeteraction@v21
       with:
         name: result
-        path: /github/workspace
+        path: /github/workspace/metrics.csv
     # Use the output from the `hello` step
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
