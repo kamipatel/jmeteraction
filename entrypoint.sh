@@ -43,7 +43,8 @@ java -classpath /home/jmeterscript/${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}
 echo "After Java code run"
 
 echo "May be you see csv"
-cp /home/jmeterscript/output/* /home/jmeterscript/${GIT_PROJECT}/dist/ 
+ls ${CSV_OUTPUT_PATH}
+cp ${CSV_OUTPUT_PATH}/* /home/jmeterscript/${GIT_PROJECT}/dist/ 
 ls /home/jmeterscript/${GIT_PROJECT}/dist/
 echo "Did you see csv?"
 
