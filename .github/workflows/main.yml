@@ -12,5 +12,5 @@ jobs:
         path: output
     - shell: bash
       run: |
-        ls 
+        ls /
 
