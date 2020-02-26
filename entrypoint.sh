@@ -39,11 +39,10 @@ git config --global user.email ${GIT_USER_EMAIL}
 git config --global user.name ${GIT_USER_NAME}
 
 git clone ${GIT_URL} 
-ls /home/jmeterscript/
-ls /home/jmeterscript/${GIT_PROJECT}/jmeterinfo/
+ls ${GIT_PROJECT}/jmeterinfo/
 
 echo "Before Java code run"
-java -classpath /home/jmeterscript/${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "/home/jmeterscript/${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}"
+java -classpath ${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}"
 echo "After Java code run"
 
 echo "current dir"
