@@ -6,10 +6,10 @@ jobs:
     name: A job to run jmeter
     steps:
     - name: Run jmeter step
-      uses: kamipatel/jmeteraction@v20
+      uses: kamipatel/jmeteraction@v21
       with:
         name: result
-        path: /github/home
+        path: /github/workspace
     # Use the output from the `hello` step
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
