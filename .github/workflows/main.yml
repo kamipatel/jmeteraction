@@ -6,11 +6,12 @@ jobs:
     name: A job to run jmeter
     steps:
     - name: Run jmeter step
-      uses: kamipatel/jmeteraction@v311
+      uses: kamipatel/jmeteraction@v312
       with:
         name: output
         path: output
     - shell: bash
       run: |
         ls output
+
 
