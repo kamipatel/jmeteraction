@@ -10,12 +10,13 @@ jobs:
       with:
         name: result
         path: /github/workspace
-    # Use the output from the `hello` step
+  upload_job:
+    runs-on: ubuntu-latest
+    name: A job to upload
+    steps:
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v1
-      entrypoint: /github/workspace
-      with:
+        uses: actions/upload-artifact@v1
+        with:
         name: result
         path: /github/workspace/
- 
 
