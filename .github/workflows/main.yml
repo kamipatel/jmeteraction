@@ -9,8 +9,8 @@ jobs:
       id: runjmeter
       uses: kamipatel/jmeteraction@v18
       with:
-        name: dist
-        path: /github/home/metrics.csv
+        name: result
+        path: /github/home
     # Use the output from the `hello` step
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
