@@ -7,10 +7,10 @@ jobs:
     steps:
     - name: Run jmeter step
       id: runjmeter
-      uses: kamipatel/jmeteraction@v11
+      uses: kamipatel/jmeteraction@v12
       with:
         name: dist
-        path: /home/jmeterscript/output/metrics.csv
+        path: /home/jmeterscript/output
     # Use the output from the `hello` step
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
