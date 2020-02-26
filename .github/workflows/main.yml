@@ -15,8 +15,8 @@ jobs:
     name: A job to upload
     steps:
     - name: Archive code coverage results
-        uses: actions/upload-artifact@v1
-        with:
+      uses: actions/upload-artifact@v1
+      with:
         name: result
         path: /github/workspace/
 
