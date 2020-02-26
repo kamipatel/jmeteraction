@@ -3,14 +3,14 @@ on: [push]
 jobs:
   jmeter_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to run jmeter
     steps:
-    - name: Hello world action step
-      id: hello
+    - name: Run jmeter step
+      id: runjmeter
       uses: kamipatel/jmeteraction@v11
       with:
         name: dist
-        path: dist
+        path: /home/jmeterscript/output/metrics.csv
     # Use the output from the `hello` step
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
