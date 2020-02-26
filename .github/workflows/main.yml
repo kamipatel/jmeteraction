@@ -7,10 +7,14 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: kamipatel/jmeteraction@v9
+      uses: kamipatel/jmeteraction@v11
       with:
-        who-to-greet: 'Mona the Octocat'
+        name: dist
+        path: dist
     # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v1
+      with:
+        name: code-coverage-report
+        path: output/test/code-coverage.html
  
