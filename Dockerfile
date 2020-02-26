@@ -14,7 +14,7 @@ ENV GIT_USER_EMAIL "kamipatel@gmail.com"
 ENV GIT_USER_NAME "kamipatel"
 ENV	GIT_URL https://github.com/kamipatel/redwoods-insurance.git
 ENV	GIT_PROJECT redwoods-insurance
-ENV CSV_OUTPUT_PATH=/home/jmeterscript/output/metrics.csv
+ENV CSV_OUTPUT_PATH=/github/home/metrics.csv
 ENV GITHUB_TOKEN=7777171721078bbbdb91ea4218864563e7d2d5d9
 
 # Install extra packages
