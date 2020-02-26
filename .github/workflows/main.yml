@@ -10,9 +10,6 @@ jobs:
       with:
         name: result
         path: /github/workspace
-    - name: Archive code coverage results
-      uses: actions/upload-artifact@v1
-      with:
-        name: result
-        path: /github/workspace/
-  
+    - shell: bash
+      run: |
+        ls /github/workspace
