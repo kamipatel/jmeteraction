@@ -40,6 +40,7 @@ RUN    apk update \
 	&& cd /home/jmeterscript  \
 	&& apk add --no-cache git 
 
+RUN chmod +x /output
 
 # TODO: plugins (later)
 # && unzip -oq "/tmp/dependencies/JMeterPlugins-*.zip" -d $JMETER_HOME
