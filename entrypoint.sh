@@ -22,7 +22,6 @@ echo $@
 #jmeter $@
 
 chmod 777 /output
-ls /output
 
 echo "GIT_URL=${GIT_URL}"
 echo "GIT_PROJECT=${GIT_PROJECT}"
@@ -48,7 +47,11 @@ echo "Before Java code run"
 java -classpath /home/jmeterscript/${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "/home/jmeterscript/${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}"
 echo "After Java code run"
 
+echo "May be you see ls output"
+pwd /output 
+ls /output
 echo "May be you see csv"
+
 cat ${CSV_OUTPUT_PATH}
 echo "Did you see csv?"
 
