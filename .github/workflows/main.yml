@@ -4,6 +4,10 @@ jobs:
   jmeter_job:
     runs-on: ubuntu-latest
     name: A job to run jmeter
+    container:
+        image: my-container-on-docker-hub:latest
+        volumes:
+          - /github/home/.folder:/github/home/    
     steps:
     - name: Run jmeter step
       id: runjmeter
@@ -15,6 +19,6 @@ jobs:
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
       with:
-        name: code-coverage-report
+        name: result
         path: /github/home/metrics.csv
  
