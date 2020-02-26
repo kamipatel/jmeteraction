@@ -21,7 +21,12 @@ echo "jmeter args=$@"
 echo $@
 #jmeter $@
 
-chmod 777 /output
+mkdir output
+chmod 777 output
+
+ls output
+
+cat > output/foo.txt
 
 echo "GIT_URL=${GIT_URL}"
 echo "GIT_PROJECT=${GIT_PROJECT}"

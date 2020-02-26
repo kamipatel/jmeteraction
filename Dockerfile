@@ -4,6 +4,8 @@ FROM alpine:3.10
 
 VOLUME /output
 
+RUN chmod +x output
+
 MAINTAINER Kam<cloudrewire@gmail.com>
 
 ARG JMETER_VERSION="5.1.1"
@@ -36,11 +38,11 @@ RUN    apk update \
 	&& rm -rf /tmp/dependencies \	
 	&& mkdir -p /home/jmeterscript  \
 	&& mkdir -p /home/jmeterscript/output \
-    && mkdir -p /output \
 	&& cd /home/jmeterscript  \
 	&& apk add --no-cache git 
 
 RUN chmod +x /output
+
 
 # TODO: plugins (later)
 # && unzip -oq "/tmp/dependencies/JMeterPlugins-*.zip" -d $JMETER_HOME
