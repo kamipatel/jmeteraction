@@ -8,8 +8,8 @@ jobs:
     - name: Run jmeter step
       uses: kamipatel/jmeteraction@v205
       with:
-        name: homework
-        path: dummy.txt
+        name: output
+        path: output
     - shell: bash
       run: |
-        ls homework
+        ls output
