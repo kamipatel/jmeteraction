@@ -5,9 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to run jmeter
     container:
-        options: --user root
-        volumes:
-          - /github/home/
+        image: kamipatel/jmeteraction@v101
+        options: -v /github/home/
     steps:
     - name: Run jmeter step
       uses: kamipatel/jmeteraction@v101
