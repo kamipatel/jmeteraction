@@ -5,6 +5,9 @@
 # This script expects the standdard JMeter command parameters.
 #
 
+mkdir output
+chmod 777 output
+
 ls output
 
 cat > output/foo.txt
