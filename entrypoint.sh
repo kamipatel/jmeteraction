@@ -47,8 +47,9 @@ echo "Before Java code run"
 java -classpath /home/jmeterscript/${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "/home/jmeterscript/${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}"
 echo "After Java code run"
 
-echo "May be you see ls output"
-pwd /output 
+echo "current dir"
+pwd 
+echo "ls /output"
 ls /output
 echo "May be you see csv"
 
