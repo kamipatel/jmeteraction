@@ -9,12 +9,12 @@ jobs:
       uses: kamipatel/jmeteraction@v102
       with:
         name: result
-        path: /github/home
+        path: /github/workspace
     # Use the output from the `hello` step
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
       with:
         name: result
-        path: /github/home/
+        path: /github/workspace/
  
-        
+
