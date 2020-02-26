@@ -12,5 +12,6 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  volumes: /github/home/
   args:
     - ${{ inputs.who-to-greet }}
