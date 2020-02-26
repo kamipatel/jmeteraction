@@ -22,7 +22,7 @@ echo $@
 #jmeter $@
 
 chmod 777 output
-ls output
+ls /output
 
 echo "GIT_URL=${GIT_URL}"
 echo "GIT_PROJECT=${GIT_PROJECT}"
