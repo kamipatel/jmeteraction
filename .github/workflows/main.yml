@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Run jmeter step
       id: runjmeter
-      uses: kamipatel/jmeteraction@v18
+      uses: kamipatel/jmeteraction@v20
       with:
         name: result
         path: /github/home
