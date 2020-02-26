@@ -16,6 +16,7 @@ jobs:
     steps:
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
+      if: success()
       with:
         name: result
         path: /github/workspace/
