@@ -13,8 +13,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   volumes: /github/home/
-  env:
-    WORK_DIR: /github/home/
   args:
     - ${{ inputs.who-to-greet }}
-    
