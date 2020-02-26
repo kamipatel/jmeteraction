@@ -4,9 +4,7 @@ FROM alpine:3.10
 
 VOLUME /output
 
-RUN chmod +x tmp
-
-RUN mkdir output
+#RUN mkdir output
 RUN chmod +x output
 
 # Entrypoint has same signature as "jmeter" command
