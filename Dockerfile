@@ -17,6 +17,7 @@ ENV	GIT_PROJECT redwoods-insurance
 ENV CSV_OUTPUT_PATH=/github/home/metrics.csv
 ENV GITHUB_TOKEN=7777171721078bbbdb91ea4218864563e7d2d5d9
 ENV GITHUB_HOME=/github/home/
+
 # Install extra packages
 # See https://github.com/gliderlabs/docker-alpine/issues/136#issuecomment-272703023
 # Change TimeZone TODO: TZ still is not set!
