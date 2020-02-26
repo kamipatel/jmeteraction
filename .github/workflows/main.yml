@@ -6,7 +6,7 @@ jobs:
     name: A job to run jmeter
     steps:
     - name: Run jmeter step
-      uses: kamipatel/jmeteraction@latest
+      uses: kamipatel/jmeteraction@action:latest
       with:
         name: result
         path: /github/home/metrics.csv
