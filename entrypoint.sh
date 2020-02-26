@@ -48,17 +48,17 @@ echo "After Java code run"
 echo "current dir"
 pwd 
 ls
-echo "ls output"
-ls output
 
 echo "before copy to dir"
 mkdir output
 chmod 777 output
 cat > output/do.txt
 cat > output/hi.txt
+echo "ls output after dumy copy file"
+ls output
 cp /output/metrics.csv output
 echo "after copy to dir"
-
+ls output
 echo "before ls of output"
 ls output
 echo "after ls of output"
