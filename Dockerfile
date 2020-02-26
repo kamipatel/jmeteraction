@@ -2,9 +2,12 @@
 # https://github.com/hhcordero/docker-jmeter-server/blob/master/Dockerfile
 FROM alpine:3.10
 
-VOLUME /tmp
+VOLUME /output
 
 RUN chmod +x tmp
+
+RUN mkdir output
+RUN chmod +x output
 
 # Entrypoint has same signature as "jmeter" command
 COPY entrypoint.sh /

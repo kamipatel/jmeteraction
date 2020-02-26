@@ -5,9 +5,9 @@
 # This script expects the standdard JMeter command parameters.
 #
 
-ls tmp
+ls output
 
-cat > tmp/foo.txt
+cat > output/foo.txt
 
 echo "END Running Jmeter on date"
 
