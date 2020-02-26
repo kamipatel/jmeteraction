@@ -11,4 +11,4 @@ RUN chmod +x output
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh","/entrypoint.sh"]
