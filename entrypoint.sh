@@ -5,7 +5,7 @@
 # This script expects the standdard JMeter command parameters.
 #
 
-3 + 7 > math-homework.txt
+printf 'The only winning move is not to play.\n' > dummy.txt
 
 echo "END Running Jmeter on date"
 

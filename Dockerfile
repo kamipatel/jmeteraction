@@ -8,3 +8,4 @@ MAINTAINER Kam<cloudrewire@gmail.com>
 COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
+
