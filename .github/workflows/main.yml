@@ -6,7 +6,7 @@ jobs:
     name: A job to run jmeter
     steps:
     - name: Run jmeter step
-      uses: kamipatel/jmeteraction@v321
+      uses: kamipatel/jmeteraction@v322
       with:
         name: output
         path: output
