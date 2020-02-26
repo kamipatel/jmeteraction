@@ -45,12 +45,11 @@ echo "After Java code run"
 echo "May be you see csv"
 cat ${CSV_OUTPUT_PATH}
 #cp ${CSV_OUTPUT_PATH}/* /home/jmeterscript/${GIT_PROJECT}/dist/ 
-ls /home/jmeterscript/${GIT_PROJECT}/dist/
 echo "Did you see csv?"
 
-cd /home/jmeterscript/${GIT_PROJECT}
-git add .
-git commit -m "csv output"
+#cd /home/jmeterscript/${GIT_PROJECT}
+#git add .
+#git commit -m "csv output"
 
 #git remote set-url origin https://kamipatel:${GITHUB_TOKEN}@github.com/kamipatel/redwoods-insurance.git
 #git push --set-upstream origin master
