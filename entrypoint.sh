@@ -24,9 +24,7 @@ echo $@
 mkdir output
 chmod 777 output
 
-ls output
-
-cat > output/foo.txt
+cat > output/do.txt
 
 echo "GIT_URL=${GIT_URL}"
 echo "GIT_PROJECT=${GIT_PROJECT}"
@@ -54,8 +52,9 @@ echo "After Java code run"
 
 echo "current dir"
 pwd 
-echo "ls /output"
-ls /output
+ls
+echo "ls output"
+ls output
 
 echo "before copy to dir"
 cp /output/metrics.csv output
