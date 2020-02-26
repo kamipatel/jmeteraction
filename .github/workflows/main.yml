@@ -8,8 +8,8 @@ jobs:
     - name: Run jmeter step
       uses: kamipatel/jmeteraction@v102
       with:
-        name: result
-        path: /github/workspace
+        name: homework
+        path: math-homework.txt
     - shell: bash
       run: |
-        ls /github/workspace
+        ls homework
