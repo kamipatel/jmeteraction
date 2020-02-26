@@ -21,6 +21,7 @@ echo "jmeter args=$@"
 echo $@
 #jmeter $@
 
+chmod 777 output
 ls output
 
 echo "GIT_URL=${GIT_URL}"
