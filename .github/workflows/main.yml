@@ -3,6 +3,8 @@ on: [push]
 jobs:
   jmeter_job:
     runs-on: ubuntu-latest
+    container:
+        volumes:/github/home/
     name: A job to run jmeter
     steps:
     - name: Run jmeter step
