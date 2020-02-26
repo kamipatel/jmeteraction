@@ -38,7 +38,6 @@ RUN    apk update \
 	&& rm -rf /tmp/dependencies \	
 	&& mkdir -p /home/jmeterscript  \
 	&& mkdir -p /home/jmeterscript/output \
-	&& cd /home/jmeterscript  \
 	&& apk add --no-cache git 
 
 RUN chmod +x /output
