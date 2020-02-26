@@ -58,6 +58,8 @@ echo "ls /output"
 ls /output
 echo "May be you see csv"
 
+cp /output/metrics.csv output
+
 cat ${CSV_OUTPUT_PATH}
 echo "Did you see csv?"
 
