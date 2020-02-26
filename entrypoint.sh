@@ -58,8 +58,11 @@ ls output
 
 echo "before copy to dir"
 cp /output/metrics.csv output
-ls output
 echo "after copy to dir"
+cat > output/hi.txt
+echo "before ls of output"
+ls output
+echo "after ls of output"
 
 echo "May be you see csv"
 cat ${CSV_OUTPUT_PATH}
