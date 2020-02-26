@@ -4,13 +4,8 @@ jobs:
   jmeter_job:
     runs-on: ubuntu-latest
     name: A job to run jmeter
-    container:
-        image: my-container-on-docker-hub:latest
-        volumes:
-          - /github/home/.folder:/github/home/    
     steps:
     - name: Run jmeter step
-      id: runjmeter
       uses: kamipatel/jmeteraction@v20
       with:
         name: result
