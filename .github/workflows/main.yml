@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to run jmeter
     container:
-        image: owasp/zap2docker-stable
+        image: kamipatel/jmeteraction@v101
         options: --user root
         volumes:
           - /github/home/
