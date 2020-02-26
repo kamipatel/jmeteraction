@@ -56,10 +56,13 @@ echo "current dir"
 pwd 
 echo "ls /output"
 ls /output
-echo "May be you see csv"
 
+echo "before copy to dir"
 cp /output/metrics.csv output
+ls output
+echo "after copy to dir"
 
+echo "May be you see csv"
 cat ${CSV_OUTPUT_PATH}
 echo "Did you see csv?"
 
