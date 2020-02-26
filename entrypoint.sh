@@ -51,8 +51,7 @@ cd /home/jmeterscript/${GIT_PROJECT}
 git add .
 git commit -m "csv output"
 
-#git remote set-url origin https://kamipatel:7777171721078bbbdb91ea4218864563e7d2d5d9@github.com/kamipatel/redwoods-insurance.git
-git remote set-url origin https://kamipatel:${GITHUB_TOKEN}@github.com/kamipatel/redwoods-insurance.git
-git push --set-upstream origin master
+#git remote set-url origin https://kamipatel:${GITHUB_TOKEN}@github.com/kamipatel/redwoods-insurance.git
+#git push --set-upstream origin master
 
 echo "END Running Jmeter on date"
