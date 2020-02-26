@@ -21,10 +21,6 @@ echo "jmeter args=$@"
 echo $@
 #jmeter $@
 
-mkdir output
-chmod 777 output
-
-cat > output/do.txt
 
 echo "GIT_URL=${GIT_URL}"
 echo "GIT_PROJECT=${GIT_PROJECT}"
@@ -57,9 +53,13 @@ echo "ls output"
 ls output
 
 echo "before copy to dir"
+mkdir output
+chmod 777 output
+cat > output/do.txt
+cat > output/hi.txt
 cp /output/metrics.csv output
 echo "after copy to dir"
-cat > output/hi.txt
+
 echo "before ls of output"
 ls output
 echo "after ls of output"
