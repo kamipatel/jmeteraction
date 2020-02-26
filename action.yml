@@ -17,3 +17,4 @@ runs:
     WORK_DIR: /github/home/
   args:
     - ${{ inputs.who-to-greet }}
+    
