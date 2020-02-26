@@ -10,14 +10,9 @@ jobs:
       with:
         name: result
         path: /github/workspace
-  upload_job:
-    runs-on: ubuntu-latest
-    name: A job to upload
-    steps:
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
-      if: success()
       with:
         name: result
         path: /github/workspace/
-
+  
