@@ -4,15 +4,12 @@ jobs:
   jmeter_job:
     runs-on: ubuntu-latest
     name: A job to run jmeter
-    container:
-        image: kamipatel/jmeteraction@v101
-        options: -v /github/home/
     steps:
     - name: Run jmeter step
       uses: kamipatel/jmeteraction@v101
       with:
         name: result
-        path: /github/home/metrics.csv
+        path: /github/home
     # Use the output from the `hello` step
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
