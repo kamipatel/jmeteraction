@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Run jmeter step
       id: runjmeter
-      uses: kamipatel/jmeteraction@v12
+      uses: kamipatel/jmeteraction@v15
       with:
         name: dist
         path: /home/jmeterscript/output
