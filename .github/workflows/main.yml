@@ -6,10 +6,10 @@ jobs:
     name: A job to run jmeter
     steps:
     - name: Run jmeter step
-      uses: kamipatel/jmeteraction@v122
+      uses: kamipatel/jmeteraction@v123
       with:
         name: homework
-        path: math-homework.txt
+        path: dummy.txt
     - shell: bash
       run: |
         ls homework
