@@ -44,7 +44,7 @@ RUN chmod +x /output
 
 # Install Chrome for Selenium
 RUN curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /chrome.deb
-RUN dpkg -i /chrome.deb || apt-get install -yf
+RUN dpkg -i /chrome.deb || apk install -yf
 RUN rm /chrome.deb
 
 # Install chromedriver for Selenium
