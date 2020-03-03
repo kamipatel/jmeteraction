@@ -21,16 +21,23 @@ echo "jmeter args=$@"
 echo $@
 #jmeter $@
 
+# install google chrome
+echo "install google chrome"
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+RUN apt-get -y update
+RUN apt-get install -y google-chrome-stable
 
-echo "GIT_URL=${GIT_URL}"
-echo "GIT_PROJECT=${GIT_PROJECT}"
-echo "JMETER_LIB_EXT=${JMETER_LIB_EXT}"
-echo "JMETER_SCRIPT_HOME=${JMETER_SCRIPT_HOME}"
-echo "CSV_OUTPUT_PATH=${CSV_OUTPUT_PATH}"
-echo "GIT_USER_EMAIL=${GIT_USER_EMAIL}"
-echo "GIT_USER_NAME=${GIT_USER_NAME}"
-echo "GITHUB_TOKEN=${GITHUB_TOKEN}"
-echo "GITHUB_WORKSPACE=${GITHUB_WORKSPACE}"
+# install chromedriver
+echo "install chromedriver"
+RUN apt-get install -yqq unzip
+RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
+RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+
+echo "chrome webdriver installed!"
+
+# set display port to avoid crash
+ENV DISPLAY=:99
 
 git --version 
 
