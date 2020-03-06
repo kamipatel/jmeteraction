@@ -38,7 +38,7 @@ echo ${JMX_FILE_NAME}
 echo "Before Java code run"
 # java -classpath ${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}" ${JMX_FILE_NAME}
 
-java -classpath ${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* org.junit.runner.JUnitCore com.jcg.selenium.GoogleSearchTest "${JMETER_HOME}" "${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}" ${JMX_FILE_NAME}
+java -classpath ${GIT_PROJECT}/jmeterinfo/*.jar:${JMETER_LIB_EXT}/*.jar:${JMETER_LIB_JUNIT}/*.jar:${JMETER_LIB}/*.jar org.junit.runner.JUnitCore com.jcg.selenium.GoogleSearchTest 
 
 echo "After Java code run"
 
