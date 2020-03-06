@@ -36,7 +36,10 @@ chmod 777 output
 echo ${JMX_FILE_NAME}
 
 echo "Before Java code run"
-java -classpath ${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}" ${JMX_FILE_NAME}
+# java -classpath ${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* zerotest.JmeterUtil "${JMETER_HOME}" "${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}" ${JMX_FILE_NAME}
+
+java -classpath ${GIT_PROJECT}/jmeterinfo/*:${JMETER_LIB_EXT}/*:${JMETER_LIB}/* com.jcg.selenium.GoogleSearchTest "${JMETER_HOME}" "${GIT_PROJECT}/jmeterinfo/"  "${CSV_OUTPUT_PATH}" ${JMX_FILE_NAME}
+
 echo "After Java code run"
 
 cat ${CSV_OUTPUT_PATH}
